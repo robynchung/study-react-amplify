@@ -1,6 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import Application from './Application';
+import React from "react";
+import ReactDOM from "react-dom";
+import Amplify from "aws-amplify";
 
-ReactDOM.render(<Application />, document.getElementById('root'));
+import Application from "./Application";
+import awsConfig from "./aws-exports";
+import "./index.css";
+
+Amplify.configure(awsConfig);
+
+ReactDOM.render(<Application />, document.getElementById("root"));
