@@ -1,0 +1,49 @@
+{
+	"projectPath": "/Users/cloud/Desktop/@Study/study-react-amplify",
+	"backupAWSMobileJSDirPath": "/Users/cloud/Desktop/@Study/study-react-amplify/~awsmobilejs-2020-11-09-21-17-15",
+	"projectInfo": {
+		"ProjectName": "study-react-amplify",
+		"ProjectPath": "/Users/cloud/Desktop/@Study/study-react-amplify",
+		"InitializationTime": "",
+		"LastConfigurationTime": "",
+		"LastNPMInstallTime": "",
+		"FrontendLastBuildTime": "",
+		"LastPublishTime": "",
+		"BackendLastSyncTime": "",
+		"BackendLastBuildTime": "",
+		"BackendLastPushTime": "",
+		"BackendProjectID": "",
+		"BackendProjectName": "",
+		"BackendProjectConsoleUrl": "",
+		"BackendProjectCreationTime": "",
+		"BackendProjectLastUpdatedTime": "",
+		"Framework": "react"
+	},
+	"projectConfig": {
+		"SourceDir": "src",
+		"DistributionDir": "build",
+		"BuildCommand": "npm run-script build",
+		"StartCommand": "npm run-script start"
+	},
+	"packageJson": {
+		"name": "grudges",
+		"version": "0.1.0",
+		"private": true,
+		"dependencies": {
+			"lodash": "^4.17.10",
+			"react": "^16.4.0",
+			"react-dom": "^16.4.0",
+			"react-scripts": "1.1.4"
+		},
+		"scripts": {
+			"start": "react-scripts start",
+			"build": "react-scripts build",
+			"test": "react-scripts test --env=jsdom",
+			"eject": "react-scripts eject"
+		},
+		"devDependencies": {}
+	},
+	"framework": "react",
+	"initialStage": "invalid",
+	"strategy": "create"
+}
