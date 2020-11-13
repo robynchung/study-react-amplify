@@ -1,5 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { API } from "aws-amplify";
 import "./App.css";
+
+const initialState = { name: "", description: "" };
 
 function App() {
   const [formState, setFormState] = useState(initialState);
@@ -15,7 +18,8 @@ function App() {
 
   async function fetchTodos() {
     try {
-      const todoData = await API.graphql(graphqlOperation(listTodos));
+      const todoData = [];
+      // const todoData = await API.graphql(graphqlOperation(listTodos));
       const todos = todoData.data.listTodos.items;
       setTodos(todos);
     } catch (err) {
@@ -29,29 +33,22 @@ function App() {
       const todo = { ...formState };
       setTodos([...todos, todo]);
       setFormState(initialState);
-      await API.graphql(graphqlOperation(createTodo, { input: todo }));
+      // await API.graphql(graphqlOperation(createTodo, { input: todo }));
     } catch (err) {
       console.log("error creating todo:", err);
     }
   }
 
   return (
-    <div style={styles.container}>
+    <div>
       <h2>Amplify Todos</h2>
-      <input onChange={event => setInput("name", event.target.value)} style={styles.input} value={formState.name} placeholder="Name" />
-      <input
-        onChange={event => setInput("description", event.target.value)}
-        style={styles.input}
-        value={formState.description}
-        placeholder="Description"
-      />
-      <button style={styles.button} onClick={addTodo}>
-        Create Todo
-      </button>
+      <input onChange={event => setInput("name", event.target.value)} s value={formState.name} placeholder="Name" />
+      <input onChange={event => setInput("description", event.target.value)} value={formState.description} placeholder="Description" />
+      <button onClick={addTodo}>Create Todo</button>
       {todos.map((todo, index) => (
-        <div key={todo.id ? todo.id : index} style={styles.todo}>
-          <p style={styles.todoName}>{todo.name}</p>
-          <p style={styles.todoDescription}>{todo.description}</p>
+        <div key={todo.id ? todo.id : index}>
+          <p>{todo.name}</p>
+          <p>{todo.description}</p>
         </div>
       ))}
     </div>
