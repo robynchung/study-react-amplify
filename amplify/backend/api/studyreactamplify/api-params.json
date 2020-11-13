@@ -1,0 +1,35 @@
+{
+    "paths": [
+        {
+            "name": "/lib",
+            "lambdaFunction": "studyreactamplify0ff77232",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/lib"
+        }
+    ],
+    "resourceName": "studyreactamplify",
+    "apiName": "studyreactamplify",
+    "functionArns": [
+        {
+            "lambdaFunction": "studyreactamplify0ff77232"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-studyreactamplify-dev-212725-authRole",
+        "unAuthRoleName": "amplify-studyreactamplify-dev-212725-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "studyreactamplify0ff77232",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
