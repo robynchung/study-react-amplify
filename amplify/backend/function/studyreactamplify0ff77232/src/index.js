@@ -1,4 +1,3 @@
-n;
 /* Amplify Params - DO NOT EDIT
 	ENV
 	REGION
