@@ -1,0 +1,10 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "study-react-amplify"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-2fb76x1x5xmu"
+s3_prefix = "study-react-amplify"
+region = "us-east-2"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
