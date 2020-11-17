@@ -19,6 +19,10 @@ exports.lambdaHandler = async (event, context) => {
     // const ret = await axios(url);
     response = {
       statusCode: 200,
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+        "Content-Type": "application/json"
+      },
       body: JSON.stringify({
         message: "hello world"
         // location: ret.data.trim()

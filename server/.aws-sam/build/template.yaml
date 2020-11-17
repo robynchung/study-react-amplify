@@ -6,6 +6,12 @@ Description: 'server
 
   '
 Globals:
+  Api:
+    Cors:
+      AllowMethods: '''GET,POST,OPTIONS'''
+      AllowHeaders: '''content-type'''
+      AllowOrigin: '''*'''
+      AllowCredentials: '''*'''
   Function:
     Timeout: 3
 Resources:
