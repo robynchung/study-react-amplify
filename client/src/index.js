@@ -28,5 +28,3 @@ Amplify.configure({
 });
 
 API.configure();
-
-console.log(API);
