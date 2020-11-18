@@ -7,8 +7,9 @@ console.log(`${aws.api}/Stage/hello`);
 
 function App() {
   useEffect(() => {
-    API.get("study-react-amplify", `/Stage/hello`, {
+    API.post("study-react-amplify", `/Stage/hello`, {
       headers: {
+        "Content-Type": "application/json",
         "Access-Control-Allow-Origin": "*"
       }
     })

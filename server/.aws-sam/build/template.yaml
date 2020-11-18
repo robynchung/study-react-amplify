@@ -6,14 +6,14 @@ Description: 'server
 
   '
 Globals:
-  Api:
-    Cors:
-      AllowMethods: '''GET,POST,OPTIONS'''
-      AllowHeaders: '''content-type'''
-      AllowOrigin: '''*'''
-      AllowCredentials: '''*'''
   Function:
     Timeout: 3
+  Api:
+    Cors:
+      AllowOrigin: '''http://localhost:3000'''
+      AllowCredentials: '''true'''
+      AllowMethods: '''GET,POST'''
+      AllowHeaders: '''*'''
 Resources:
   HelloWorldFunction:
     Type: AWS::Serverless::Function
@@ -26,7 +26,7 @@ Resources:
           Type: Api
           Properties:
             Path: /hello
-            Method: get
+            Method: post
 Outputs:
   HelloWorldApi:
     Description: API Gateway endpoint URL for Prod stage for Hello World function
