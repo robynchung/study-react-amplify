@@ -4,7 +4,6 @@ import Amplify, { API } from "aws-amplify";
 
 import "./index.css";
 import App from "./App";
-import awsConfig from "./aws-exports";
 import { aws } from "./config";
 
 ReactDOM.render(

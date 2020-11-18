@@ -1,9 +1,6 @@
 import { useEffect } from "react";
 import { API } from "aws-amplify";
-import { aws } from "./config";
 import "./App.css";
-
-console.log(`${aws.api}/Stage/hello`);
 
 function App() {
   useEffect(() => {
