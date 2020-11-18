@@ -4,3 +4,4 @@
 - Amplify
 - AWS Lambda, API gateway
 - SAM
+- REST API
