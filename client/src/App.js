@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { API } from "aws-amplify";
-import "./App.css";
 
 function App() {
   useEffect(() => {
