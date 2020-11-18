@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Amplify, { API } from "aws-amplify";
-import "./index.css";
 import App from "./App";
 import { aws } from "./config";
+import "./index.css";
 
 ReactDOM.render(
   <React.StrictMode>
